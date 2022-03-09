@@ -6,44 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1f1d20037e.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     
     <div class="container">
         <div class="header">
             <div class="search-alert-section">
-                <p>search icon</p>
-                <p>search bar</p>
-                <p>alert icon</p>
-                <p>user avatar</p>
-                <p>First Name Last Name</p>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search..">
+                <i class="fa-solid fa-bell"></i>
+                <img src="small-profile.jpg" style="height:40px">
+                <p>FirstName LastName</p>
             </div>
 
             <div class="greeting-section">
                 <div class="greeting">
+                    <img src="small-profile.jpg" style="height:80px">
                     <p>Hi there, First Name Last Name (@handle)</p>
                 </div>
 
                 <div class="new-upload-share">
-                    <p>New</p>
-                    <p>Upload</p>
-                    <p>Share</p>
+                    <button id="new">New</button>
+                    <button id="upload">Upload</button>
+                    <button id="share">Share</button>
                 </div>
             </div>
         </div>
 
         <div class="sidebar-menu">
-            <h2>Dashboard</h2>
-            <div class="menu-items">
-                <p>Home</p>
-                <p>Profile</p>
-                <p>Messages</p>
-                <p>History</p>
-                <p>Tasks</p>
-                <p>Communities</p>
-                <p>Settings</p>
-                <p>Support</p>
-                <p>Privacy</p>
+            <div class="dashboard">
+            
+            <h2><i class='fas fa-coffee'></i>Dashboard</h2>
+                <div class="menu-items">
+                    <i class="fa-solid fa-cookie"></i>
+                    <p>Home</p>
+                    <i class="fa-solid fa-cookie-bite"></i>
+                    <p>Profile</p>
+                    <i class="fa-solid fa-stroopwafel"></i>
+                    <p>Messages</p>
+                    <i class="fa-solid fa-ice-cream"></i>
+                    <p>History</p>
+                    <i class="fa-solid fa-martini-glass-citrus"></i>
+                    <p>Tasks</p>
+                    <i class="fa-solid fa-lemon"></i>
+                    <p>Communities</p>
+                    <i class="fa-solid fa-gears"></i>
+                    <p>Settings</p>
+                    <i class="fa-solid fa-hand-sparkles"></i>
+                    <p>Support</p>
+                    <i class="fa-solid fa-mask"></i>
+                    <p>Privacy</p>
+                </div>
             </div>
         </div>
 
@@ -76,9 +91,8 @@
             </div>
 
             <div class="right-section">
-
+                <p class="title">Announcements</p>
                 <div class="announcements">
-                    <p class="title">Announcements</p>
                     <div class="announcement-items"> 
                         <p>Lorem ipsum dolor sit amet</p>
                         <p>Lorem ipsum dolor sit amet</p>
@@ -86,8 +100,8 @@
                     </div>
                 </div>
 
+                <p class="title">Trending</p>
                 <div class="trending">
-                    <p class="title">Trending</p>
                     <div class="trending-items">
                         <p>Lorem ipsum</p>
                         <p>Lorem ipsum</p>
