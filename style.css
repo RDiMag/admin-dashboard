@@ -33,23 +33,24 @@
 }
 
 .search-alert-section input[type=text] {
-    
     padding: 6px;
     border: none;
     font-size: 15px;
 }
 
 .greeting-section {
-    /* display: grid;
-    grid-template-columns: 3fr 1fr; */
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: .45fr 2fr 1fr;
+    grid-template-rows: .25fr 1fr;
+    border-style: solid;
+    border-color: rgb(206, 98, 26);
 }
 
-.avatar-large {
-    
+.name {
+    grid-column: 2;
+    grid-row: 2;
 }
+
 .sidebar-menu {
     border-style: solid;
     border-color: rgb(206, 98, 26);
