@@ -4,11 +4,20 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'abelregular';
+    src: url('/fonts/abel-regular-webfont.woff2') format('woff2'),
+         url('/fonts/abel-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .container {
     font-family: Arial, Helvetica, sans-serif;
     display: grid;
     grid-template-columns: 1fr 4fr;
     min-height: 100vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .container div {
@@ -154,8 +163,9 @@ div .header-main {
 }
 
 .dashboard h2 {
-    font-size: 26px;
+    font-size: 30px;
     color: rgba(127, 190, 245, 1);
+    font-family: 'abelregular';
 }
 
 .menu-items {
@@ -167,6 +177,11 @@ div .header-main {
     gap: 10px;
 }
 
+.menu-items p {
+    font-family: 'abelregular';
+    font-weight: bold;
+    font-size: 22px;
+}
 .main {
     background-color: gainsboro;
     grid-row: 2;
@@ -190,20 +205,31 @@ div .header-main {
     border-left-width: 6px;
     border-left-style: solid;
     border-left-color: rgba(127, 190, 245, 1);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 8px 0 rgba(0,0,0,0.19);
+
 }
 
 .right-section {
     padding: 8px;
     display: grid;
-    grid-template-rows: repeat(autofit, minmax(100px, 1fr));
+    grid-template-rows: 50px 1fr 50px 1fr;
 }
 
 .announcements {
-    border-style: solid;
-    border-color: rgb(237, 100, 219);
     font-size: medium;
     background-color: white;
     border-radius: 12px; 
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#trending, #announcements {
+    position: relative;
+    text-align: center;
+    top: 25%;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(13, 22, 31);
+
 }
 
 .announcement-items {
@@ -216,11 +242,11 @@ div .header-main {
 }
 
 .trending {
-    border-style: solid;
-    border-color: yellowgreen;
     background-color: white;
     border-radius: 12px;
     height: 250px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
 }
 
 button {
