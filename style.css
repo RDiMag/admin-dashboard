@@ -222,6 +222,7 @@ div .header-main {
     background-color: white;
     border-radius: 12px; 
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin-bottom: 8px;
 }
 
 #trending, #announcements {
@@ -230,7 +231,7 @@ div .header-main {
     top: 25%;
     font-size: 20px;
     font-weight: bold;
-    color: rgb(13, 22, 31);
+    color: black;
 
 }
 
@@ -247,19 +248,20 @@ div .header-main {
 }
 
 .title {
-    font-size: large;
+    font-size: larger;
     font-weight: bolder;
+    font-family: 'abelregular';
 }
 
 .trending {
     background-color: white;
     border-radius: 12px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin-bottom: 1px;
 }
 
 .trending-items p {
     display: flex;
-    /* align-items: center; */
     justify-content: space-between;
     text-align: left;
     font-size: 22px;
@@ -272,6 +274,8 @@ button {
     font-size: 16px;
     border-radius: 8px;
     margin: 8px;
+    font-family: 'abelregular';
+    font-size: 20px;
 }
 
 .new, .upload, .share {
